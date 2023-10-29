@@ -1,0 +1,28 @@
+
+
+
+# Crear modelo y Controlador
+php artisan make:model Producto --resource --api --migration
+
+# Ejecutar las Migraciones en artisan
+
+php artisan migrate
+
+# Crear Seeder
+php artisan make:seeder CategoriaSeeder
+
+# Ejecutar seeder consola
+
+php artisan db:seed
+
+
+# crear el Resource
+
+php artisan make:resource ProductoCollector
+
+# Ejecutar Rollback
+php aritsan migrate:rollback 1
+
+# Crear Request
+
+php artisan make:request ProductoRequest
