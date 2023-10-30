@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "944bb652-847e-4b36-80ab-69d5f612f612",
+		"name": "APP LARAVEL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24254197"
+	},
+	"item": [
+		{
+			"name": "GetViajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/viajes/GetViajes",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"viajes",
+						"GetViajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viajesById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/viajes/viajesById?idViaje=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"viajes",
+						"viajesById"
+					],
+					"query": [
+						{
+							"key": "idViaje",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viajeDetalle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/viajes/viajeDetalle",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"viajes",
+						"viajeDetalle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarTuristas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"FREDDY ANDRES\",\r\n    \"apellido\": \"NAVA FERRER\",\r\n    \"identificacion\": 11389639,\r\n    \"telefono\": \"04246923480\",\r\n    \"viaje_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/turistas/AgregarTuristas",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"turistas",
+						"AgregarTuristas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarTuristas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\": 11389639\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/turistas/buscarTuristas",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"turistas",
+						"buscarTuristas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
